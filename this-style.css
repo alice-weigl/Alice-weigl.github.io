@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --color-1: #7D675A;
+    --color-2: #574439;
+    --color-3: #A48170;
+    --color-4: #765B4D;
+    --color-5: #EBE0D9;
+    --color-6: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.handwriting {
+    font-family: "Allura", cursive;
+}
+
+.fz-20 {
+    font-size: 20px;
+}
+
+.fw-normal {
+    font-weight: 200 !important;
+}
+
+.bottom-hero {
+    position: absolute;
+    bottom: -2px;
+    width: 100% !important;
+    z-index: 3;
+}
+
+.star-1 {
+    position: absolute;
+    z-index: 1;
+}
+
+.star-1-bottom {
+    position: absolute;
+    z-index: 1;
+    bottom: 40%;
+    right: 0;
+}
+
+.star-2-bottom {
+    position: absolute;
+    z-index: 1;
+    bottom: 30%;
+    right: 30%;
+    width: 50px;
+}
+
+.star-2 {
+    position: absolute;
+    z-index: 1;
+    left: 10%;
+    top: 15%;
+    width: 50px;
+}
+
+.top-hero-decoration {
+    position: absolute;
+    top: -5px;
+    z-index: 1;
+    right: 0 !important;
+    -webkit-transform: scaleX(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleX(-1);
+    transform: scaleY(-1);
+}
+
+.bottom-hero-decoration {
+    position: absolute;
+    bottom: -2px;
+    z-index: 1;
+    right: 0 !important;
+}
+
+.top-decoration {
+    position: absolute;
+    top: 0;
+}
+
+.bottom-decoration {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    rotate: 180deg;
+    z-index: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 100px 0;
+}
+
+body {
+    background: var(--color-5);
+    color: var(--color-2);
+}
+
+.hero {
+    /* position: relative; */
+    background-color: var(--color-1);
+    color: var(--color-6);
+    /* z-index: 10; */
+}
+
+@media screen and (max-width:575px) {
+
+    .bottom-decoration,
+    .top-decoration {
+        /* display: none; */
+        width: 100px;
+    }
+
+    .star-2 {
+        position: absolute;
+        z-index: 1;
+        left: 15%;
+        top: 10%;
+        width: 50px;
+    }
+
+    .column-order-1 {
+        order: -1;
+    }
+
+    .top-hero-decoration {
+        width: 50%;
+    }
+
+    .bottom-hero-decoration {
+        width: 50%;
+    }
+}
